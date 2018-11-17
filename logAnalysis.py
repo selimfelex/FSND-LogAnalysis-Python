@@ -60,7 +60,6 @@ def get_articles():
     c3.execute(SQL2)
     message3 = c3.fetchall()
     print("on which days did more than 1/% of requests lead to errors?")
-    print("")
     print(str(message3[0][0]) + " -- " + str(message3[0][1]) + "% error")
     print("")
     db.close()
