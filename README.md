@@ -25,7 +25,7 @@
   with Mon DD,yyyy as requested. 
 
 ## Requirements
-* Python 2.7.0
+* Python 2.7.12
 * psycopg2
 * Postgresql 9.5.14
 

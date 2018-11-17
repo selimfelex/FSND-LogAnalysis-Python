@@ -1,3 +1,4 @@
+# Python verion  2.7.12
 import psycopg2
 import string
 
