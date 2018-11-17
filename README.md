@@ -1,10 +1,10 @@
 # FSND Logs Analysis Project1
 
-## [Project Description]
+## Project Description
 - this projects aims to run Psql quiries from python code to practice on database connections and
   use database adapters like psycopg2.
 
-## [Project_Specification]
+## Project_Specification
  - this project has a database called news , which has 3 tables 
  1- authors , which has authors id, name, bio .
  2- articles , which has id , author, title, slug, lead, body, time.
