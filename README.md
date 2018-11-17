@@ -20,8 +20,8 @@
   acordin to the first quistion you have the count of each article visits , so you can have the author name from authors by authors.id = articles.author to connect other two tables to obtain author's name.
 
 3. On which days did more than 1% of requests lead to errors?
-  you can collect the log ration by counting the log status = '200 OK' and errors from log.status 
-  = "404 NOT FOUND" and divid on each on and see the ration condition to get the dat and reformat it
+  you can collect the log ratio by counting the log status = '200 OK' and errors from log.status 
+  = "404 NOT FOUND" and divid on each one day  and see the ratio condition to get the date and reformat it
   with Mon DD,yyyy as requested. 
 
 ## Requirements
@@ -37,5 +37,5 @@ psql -d news -f newsdata.sql
 ```
 * run the python file 
 ```
-* python3 LogAnalysis.py
+* python3 logAnalysis.py
 ```

@@ -12,9 +12,9 @@ def get_articles():
     db = psycopg2.connect("dbname=news")
     c = db.cursor()
     c.execute("SELECT articles.title AS title , COUNT(log.status) AS num"
-              " FROM  articles, log where log.status = '200 OK'"
+              " FROM  articles, log WHERE log.status = '200 OK'"
               " AND log.path LIKE '%' || articles.slug || '%'"
-              " GROUP BY title ORDER BY num DESC limit 3; ")
+              " GROUP BY title ORDER BY num DESC LIMIT 3; ")
     message1 = c.fetchall()
     print("")
     print("What are the most popular three articles of all time?")
@@ -32,7 +32,7 @@ def get_articles():
     c2 = db.cursor()
     SQL = ("select authors.name as name ,count(log.status)as num"
            " FROM  log, authors , articles"
-           " where log.status = '200 OK'"
+           " WHERE log.status = '200 OK'"
            " AND  authors.id = articles.author"
            " AND log.path LIKE '%' || articles.slug || '%'"
            " GROUP BY name ORDER BY num DESC;")
